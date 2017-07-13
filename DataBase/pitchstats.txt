@@ -1,0 +1,6 @@
+PlayerID, Wins, Losses, ERA, StrikeOuts, Walks, RunsAllowed
+109, 3, 1, 2.02, 30, 6, 9
+209, 4, 1, 1.83, 35, 8, 7
+309, 2, 1, 4.44, 29, 4, 13
+409, 1, 2, 2.01, 19, 1, 6
+

@@ -21,7 +21,7 @@ INSERT INTO teams
 DROP TABLE if exists roster;
 
 CREATE TABLE roster (
-	PlayerID INTEGER NOT NULL PRIMARY KEY,
+	PlayerID INTEGER NOT NULL identity(1,1) PRIMARY KEY,
 	TeamID INTEGER,
 	FirstName TEXT,
 	LastName TEXT,
@@ -43,48 +43,48 @@ SELECT * FROM roster;
 -- Full roster insert below	
 INSERT INTO roster 
 	VALUES	-- Cubs
-			(101, 1, 'J.', 'Baez', '2B', 11),
-			(102, 1, 'K.', 'Bryant', '3B', 12),
-			(103, 1, 'W.', 'Contreras', 'C', 13),
-			(104, 1, 'D.', 'Fowler', 'CF', 14),
-			(105, 1, 'A.', 'Rizzo', '1B', 15),
-			(106, 1, 'A.', 'Russell', 'SS', 16),
-			(107, 1, 'J.', 'Heyward', 'RF', 17),
-			(108, 1, 'C.', 'Coghlan', 'LF', 18),
-			(109, 1, 'J.', 'Lester', 'P', 19),
+			(1, 'J.', 'Baez', '2B', 11),
+			(1, 'K.', 'Bryant', '3B', 12),
+			(1, 'W.', 'Contreras', 'C', 13),
+			(1, 'D.', 'Fowler', 'CF', 14),
+			(1, 'A.', 'Rizzo', '1B', 15),
+			(1, 'A.', 'Russell', 'SS', 16),
+			(1, 'J.', 'Heyward', 'RF', 17),
+			(1, 'C.', 'Coghlan', 'LF', 18),
+			(1, 'J.', 'Lester', 'P', 19),
 		
 			-- Indians
-			(201, 2, 'R.', 'Davis', 'CF', 21),
-			(202, 2, 'J.', 'Kipnis', '2B', 22),
-			(203, 2, 'F.', 'Lindor', 'SS', 23),
-			(204, 2, 'M.', 'Napoli', '1B', 24),
-			(205, 2, 'R.', 'Perez', 'C', 25),
-			(206, 2, 'J.', 'Ramirez', '3B', 26),
-			(207, 2, 'L.', 'Chisenhall', 'RF', 27),
-			(208, 2, 'C.', 'Crisp', 'LF', 28),
-			(209, 2, 'C.', 'Kluber', 'P', 29),
+			(2, 'R.', 'Davis', 'CF', 21),
+			(2, 'J.', 'Kipnis', '2B', 22),
+			(2, 'F.', 'Lindor', 'SS', 23),
+			(2, 'M.', 'Napoli', '1B', 24),
+			(2, 'R.', 'Perez', 'C', 25),
+			(2, 'J.', 'Ramirez', '3B', 26),
+			(2, 'L.', 'Chisenhall', 'RF', 27),
+			(2, 'C.', 'Crisp', 'LF', 28),
+			(2, 'C.', 'Kluber', 'P', 29),
 
 			-- Dodgers
-			(301, 3, 'A.', 'Gonzales', '1B', 34),
-			(302, 3, 'Y.', 'Grandal', 'C', 35),
-			(303, 3, 'J.', 'Pedersen', 'CF', 31),
-			(304, 3, 'C.', 'Seager', 'SS', 33),
-			(305, 3, 'A.', 'Toles', 'LF', 38),
-			(306, 3, 'J.', 'Turner', '3B', 36),
-			(307, 3, 'Y.', 'Puig', 'RF', 37),
-			(308, 3, 'C.', 'Utley', '2B', 32),
-			(309, 3, 'C.', 'Kershaw', 'P', 39),
+			(3, 'A.', 'Gonzales', '1B', 34),
+			(3, 'Y.', 'Grandal', 'C', 35),
+			(3, 'J.', 'Pedersen', 'CF', 31),
+			(3, 'C.', 'Seager', 'SS', 33),
+			(3, 'A.', 'Toles', 'LF', 38),
+			(3, 'J.', 'Turner', '3B', 36),
+			(3, 'Y.', 'Puig', 'RF', 37),
+			(3, 'C.', 'Utley', '2B', 32),
+			(3, 'C.', 'Kershaw', 'P', 39),
 
 			-- Blue Jays
-			(401, 4, 'J.', 'Bautista', 'RF', 41),
-			(402, 4, 'E.', 'Carrera', 'LF', 42),
-			(403, 4, 'J.', 'Donaldson', '3B', 43),
-			(404, 4, 'R.', 'Martin', 'C', 44),
-			(405, 4, 'K.', 'Pillar', 'CF', 45),
-			(406, 4, 'T.', 'Tulowitski', 'SS', 46),
-			(407, 4, 'J.', 'Smoak', '1B', 47),
-			(408, 4, 'D.', 'Travis', '2B', 48),
-			(409, 4, 'M.', 'Estrada', 'P', 49);
+			(4, 'J.', 'Bautista', 'RF', 41),
+			(4, 'E.', 'Carrera', 'LF', 42),
+			(4, 'J.', 'Donaldson', '3B', 43),
+			(4, 'R.', 'Martin', 'C', 44),
+			(4, 'K.', 'Pillar', 'CF', 45),
+			(4, 'T.', 'Tulowitski', 'SS', 46),
+			(4, 'J.', 'Smoak', '1B', 47),
+			(4, 'D.', 'Travis', '2B', 48),
+			(4, 'M.', 'Estrada', 'P', 49);
 
 DROP TABLE if exists batstats;
 

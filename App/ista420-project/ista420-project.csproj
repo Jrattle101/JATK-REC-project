@@ -210,6 +210,8 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Properties\PublishProfiles\JATKRec - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\JATKRec - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="images\cover-photo_1280-200.jpg" />
     <Content Include="images\github-154769_640.png" />

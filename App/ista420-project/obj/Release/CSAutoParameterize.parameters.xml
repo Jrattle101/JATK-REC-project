@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\aspnet-ista420-project-20170613110500.mdf;Initial Catalog=aspnet-ista420-project-20170613110500;Integrated Security=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\sintal\\JATK\ REC\ project\\App\\ista420-project\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="ista420-projectConnectionString-Web.config Connection String" description="ista420-projectConnectionString Connection String used in web.config by the application to access the database." defaultValue="Server=tcp:ista422.database.windows.net,1433;Initial Catalog=JATKRec1;Persist Security Info=False;User ID=jatkadmin;Password=Pa$$w0rd;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\sintal\\JATK\ REC\ project\\App\\ista420-project\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ista420-projectConnectionString']/@connectionString" />
+  </parameter>
+</parameters>
